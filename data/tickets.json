@@ -1,0 +1,13 @@
+[
+  {
+    "id": "NX-1003",
+    "title": "Atualização cadastral de colaborador",
+    "description": "Solicito atualização do vínculo e do gestor direto para um colaborador do time de RH.",
+    "requesterName": "Juliana Alves",
+    "requesterEmail": "juliana.alves@nexodesk.com",
+    "sector": "RH",
+    "priority": "Baixa",
+    "status": "Concluído",
+    "createdAt": "2026-10-27T11:10:00.000Z"
+  }
+]

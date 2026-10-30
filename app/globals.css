@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f4f6f8;
+  --foreground: #172033;
 }
 
 @theme inline {
@@ -12,15 +12,99 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+button, select {
+  cursor: pointer;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgba(237, 106, 74, 0.35);
+  outline-offset: 2px;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+html.dark body,
+html.dark .app-shell {
+  background: #111827;
+  color: #e5e7eb;
+}
+
+html.dark .app-header {
+  background: #172033;
+  border-color: #2a3548;
+}
+
+html.dark .app-header h1,
+html.dark .app-panel,
+html.dark .app-panel h3 {
+  color: #f8fafc;
+}
+
+html.dark .app-panel {
+  background: #172033;
+  border-color: #2a3548;
+}
+
+html.dark .mx-auto > .grid article,
+html.dark section.bg-white,
+html.dark header.bg-white,
+html.dark [role="dialog"] {
+  background-color: #172033;
+  border-color: #2a3548;
+  color: #e5e7eb;
+}
+
+html.dark .mx-auto > .grid article p,
+html.dark .mx-auto > .grid article h1,
+html.dark .mx-auto > .grid article h2,
+html.dark .mx-auto > .grid article h3 {
+  color: #f8fafc;
+}
+
+html.dark .theme-toggle,
+html.dark .app-panel input,
+html.dark .app-panel select {
+  background: #202b3d;
+  border-color: #3a4659;
+  color: #e5e7eb;
+}
+
+html.dark article[class*="edf1f5"] {
+  background: #202a3a;
+  color: #e5e7eb;
+}
+
+html.dark .app-panel input::placeholder,
+html.dark [role="dialog"] input::placeholder,
+html.dark [role="dialog"] textarea::placeholder {
+  color: #94a3b8;
+}
+
+html.dark [role="dialog"] input,
+html.dark [role="dialog"] select,
+html.dark [role="dialog"] textarea,
+html.dark [role="dialog"] header {
+  background-color: #202b3d;
+  border-color: #3a4659;
+  color: #e5e7eb;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }
