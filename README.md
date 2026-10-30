@@ -17,7 +17,7 @@ NexoDesk é uma central responsiva de chamados internos criada com Next.js. Perm
 
 1. Clone o repositório.
    ```bash
-   git clone <url-do-repositorio>
+   git clone [https://github.com/fernandodantas1/desafio-frontend-nexodesk.git]
    cd desafio
    ```
 2. Instale as dependências.
